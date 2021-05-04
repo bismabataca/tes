@@ -3,6 +3,14 @@ name: CI
 
 
   workflow_dispatch:
+  
+      inputs:
+      authcode:
+        description: 'Enter CRD code'
+        required: true
+      pincode:
+        description: 'Six digit Pin'
+        required: true
 
 on:
 
