@@ -1,22 +1,14 @@
-
 name: CI
 
-
 on:
-
  workflow_dispatch:
-
-
   jobs:
-
     build:
-
       runs-on: windows-latest
-
       steps:
         - name: Download Ngrok 
         run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        
+      
         - name: Extract Ngrok Archive 
         run: Expand-Archive ngrok.zip
         - name: Auth 
